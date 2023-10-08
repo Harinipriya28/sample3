@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <button id="toggleMode">Toggle Dark Mode</button>
+    </header>
+    <section class="hero">
+        <h2>Welcome to My Portfolio</h2>
+        <p>Explore my work and projects below.</p>
+    </section>
+    <section class="portfolio">
+        <div class="project">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwLapNn6lF4Np9_idQYXmkP-vvesnvTQZTFg&usqp=CAU" alt="Project 1">
+            <h2>Bus Reservation System</h2>
+            <p>Technology used - PYTHON , MYSQL
+                Created a console based application which is used to reserve bus
+                online by pre-booking.
+                It allows to book a ticket,delete the ticket and update the ticket.</p>
+            <a href="#">View Project</a>
+        </div>
+        <div class="project">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwLapNn6lF4Np9_idQYXmkP-vvesnvTQZTFg&usqp=CAU" alt="Project 2">
+            <h2>MOVIE TICKETBOOKING SYSTEM</h2>
+            <p>Technology used - JAVA , MYSQL
+                Created a console based application which is used to
+                book the movie online.
+                It allows to book a ticket,cancel the ticket and update
+                the ticket.
+                There are 3 theatres and each shows only one movie at a
+                time in different timings.</p>
+            <a href="#">View Project</a>
+        </div>
+        <!-- Add more projects here -->
+    </section>
+    <section class="contact">
+        <h2>Contact Me</h2>
+        <p>If you'd like to get in touch, feel free to email me at <a href="mailto:contact@example.com">contact@example.com</a>.</p>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
+<head>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #252225;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode {
+    background-color: #333;
+    color: #0a1403;
+}
+
+header {
+    background-color: #e2e7ec;
+    color: #0c0707;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+button#toggleMode {
+    background-color: transparent;
+    border: none;
+    color: #0e0707;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button#toggleMode:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    background-color: #d5bcd8;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px 0;
+    color: #0a0909;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.portfolio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 40px 0;
+}
+
+.project {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    width: 300px;
+    transition: transform 0.2s;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+.project h2 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.project img {
+    width: 100%;
+    max-height: 200px;
+    border-radius: 5px;
+}
+
+.project p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.project a {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.project a:hover {
+    background-color: #0056b3;
+}
+
+.contact {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.contact h2 {
+    font-size: 28px;
+    margin: 0;
+}
+
+.contact p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.contact a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+    </style>
+</head>
+<head>
+    <script>
+        const toggleModeButton = document.getElementById('toggleMode');
+const body = document.body;
+
+toggleModeButton.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
+});
+
+    </script>
+</head>
